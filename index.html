@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FitNest - Your Home Workout Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <header class="main-header">
+  <img src="./assests/images/FitNest Logo Design.png" alt="FitNest Logo" class="logo">
+  <nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="workout.html" class="auth-link" style="display: none;">Workouts</a>
+  <a href="meals.html" class="auth-link" style="display: none;">Meals</a>
+  <a href="progress.html" class="auth-link" style="display: none;">Progress</a>
+  <a href="timer.html" class="auth-link" style="display: none;">Timer</a>
+
+  <a href="register.html" id="register-link">Register</a>
+  <a href="login.html" id="login-link">Login</a>
+  <a href="#" id="logout-link" style="display: none;">Logout</a>
+  </nav>
+
+</header>
+
+
+  <main >
+    <div class="hero-section">
+      <!-- <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_1921,c_limit/412ef7b2-57f6-4885-979c-8004c6d95715/nike-training-club-app-home-workouts.jpg" alt="Main-Section-Error1"> -->
+        <h1>Welcome to FitNest</h1>
+        <p>Your personal fitness companion. Plan, track, and achieve your fitness goals from the comfort of your home.</p>
+        <a href="workout.html" class="cta-button">Get Started</a>
+
+    </div>
+
+    <section class="advantages-section">
+        <div class="advantage-container">
+            <h2 class="advantage-para">Take your wellness to the next level</h2>
+            <div class="advantage-holder">
+                <div  >
+                    <img src="https://fitonapp.com/wp-content/themes/fiton-20250303/images/hubspot/a1.webp" alt="AdvantageError1">
+                    <h4 class="advantage-item-title">FITNESS</h4>
+                    <p class="advantage-para">Be more active and reach your goals with custom fitness programs.</p>
+                </div>
+                <div >
+                    <img src="https://fitonapp.com/wp-content/themes/fiton-20250303/images/hubspot/a2.webp" alt="advantageError2">
+                    <h4 class="advantage-item-title">MINDFULNESS</h4>
+                    <p class="advantage-para">Reduce stress and be more mindful with meditation and yoga classes.</p>
+                </div>
+                <div >
+                    <img src="https://fitonapp.com/wp-content/themes/fiton-20250303/images/hubspot/a3.webp" alt="AdvantageError3">
+                    <h4 class="advantage-item-title">MOTIVATION</h4>
+                    <p class="advantage-para">Make working out more fun and rewarding with challenges and the support of your friends.</p>
+                </div>
+                <div >
+                    <img src="https://fitonapp.com/wp-content/themes/fiton-20250303/images/hubspot/a4.webp" alt="AdvantageError4">
+                    <h4 class="advantage-item-title">NUTRITION</h4>
+                    <p class="advantage-para">Eat healthier with personalized meal plans and 500+ exclusive recipes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="excercise-section">
+      <div class="excercise-container">
+        <h2 class="advantage-para">Personalized learning journeys</h2>
+        <div class="excersice-holder">
+          <div>
+
+           <img src="https://fitonapp.com/wp-content/themes/fiton-20250303/images/hubspot/exclusive.png" alt="ExcerciseError6">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    </main>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <!-- Left Section: Message + Logo -->
+    <div class="footer-section brand-section">
+      <img src="./assests/images/FitNest Logo Design.png" alt="FitNest Logo Footer" class="footer-logo">
+      <h2>Empowering your fitness journey.</h2>
+      
+    </div>
+  </div>
+
+  <!-- Bottom: Copyright -->
+  <div class="footer-bottom">
+    <h3>&copy; 2025 FitNest. All rights reserved.</h3>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+<script type="module" src="js/firebase-config.js"></script>
+
+<!-- For navbar logic to  show feature after login  -->
+<script type="module">
+  import { auth } from './js/firebase-config.js';
+  import { onAuthStateChanged, signOut } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+
+  const registerLink = document.getElementById('register-link');
+  const loginLink = document.getElementById('login-link');
+  const logoutLink = document.getElementById('logout-link');
+  const authLinks = document.querySelectorAll('.auth-link');
+
+  onAuthStateChanged(auth, user => {
+    if (user) {
+      // Show authenticated-only links
+      authLinks.forEach(link => link.style.display = 'inline-block');
+
+      // Show logout, hide login/register
+      logoutLink.style.display = 'inline-block';
+      loginLink.style.display = 'none';
+      registerLink.style.display = 'none';
+    } else {
+      // Hide authenticated-only links
+      authLinks.forEach(link => link.style.display = 'none');
+
+      // Show login/register, hide logout
+      logoutLink.style.display = 'none';
+      loginLink.style.display = 'inline-block';
+      registerLink.style.display = 'inline-block';
+    }
+  });
+
+  // Logout function
+  logoutLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    signOut(auth).then(() => {
+      location.reload(); // Stay on homepage after logout
+    }).catch(error => {
+      console.error("Logout error:", error);
+    });
+  });
+</script>
+
+
+</body>
+</html>

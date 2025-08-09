@@ -1,0 +1,303 @@
+:root {
+  --primary: #1e90ff;
+  --accent: #00b894;
+  --bg: #f9f9f9;
+  --text: #333;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 20%;
+  height: auto;
+  max-height: 150px;
+  border-radius: 70%;
+  /* margin-left: 0; */
+}
+
+.navbar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: var(--primary);
+}
+
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_1921,c_limit/412ef7b2-57f6-4885-979c-8004c6d95715/nike-training-club-app-home-workouts.jpg");
+  background-size: cover;         /* Ensures the image covers the whole section */
+  background-position: center;    /* Centers the image */
+  background-repeat: no-repeat;   /* Prevents repeating */
+  color: black;
+  min-height: 100vh;              /* Optional: makes the hero full screen height */
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  background: white;
+  color: var(--primary);
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #e6f2ff;
+}
+/* footer  */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 3rem 1rem;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  min-height: 35vh;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-section.brand-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* flex-direction: column;
+  align-items: center; */
+  gap: 1rem;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.icon {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #f39c12;
+}
+
+
+ /* Advantages Css */
+ .advantages-section{
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: white
+ }
+
+ .advantage-container{
+    width: 100%;
+    max-width: 3000px;
+    /* border: 2px solid blue; */
+    margin: auto;
+
+ }
+ .advantage-para{
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+    color: #191348;
+    font-size: 1.5rem;
+}
+.advantage-holder{
+  /* background-color: black; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    /* justify-content: space-between; */
+} 
+
+.advantage-holder>div{
+  /* border: 2px solid var(--primary); */
+  padding: 20px;
+  border-radius: 10px;
+  /* background-color: white; */
+  transition: transform 0.3s ease;
+  
+  /* text-align: center; */
+}
+.advantage-holder > div:hover {
+  transform: translateY(-5px);
+}
+
+.advantage-holder>div>img{
+  width: 100%;
+  height: auto;
+  max-height: 1200px;
+  object-fit: contain;
+}
+
+/* .advantage-item{
+    display: grid;
+    /* flex-wrap: wrap; */
+    
+/* } */
+
+/* .advantage-item>img{
+    width: 60%;
+    height: 50%;
+} */
+
+.advantage-item-title{
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #191348;
+}
+
+/* Excercise Css */
+.excercise-section{
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f1f1f1;
+}
+
+.excercise-container{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.excercise-holder{
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.excercise-holder>div{
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.excercise-holder>div>img{
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* ////////////////////////////// WorkOut CSS  //////////////////////*/
+.workout-page {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-image: url("https://i0.wp.com/fitonapp.com/wp-content/uploads/shutterstock_1039520737-scaled.jpg?resize=768%2C509&ssl=1");
+  background-size: cover;        /* Ensures the image covers the whole div */
+  background-position: center;   /* Centers the image */
+  background-repeat: no-repeat;  /* Prevents image from repeating */
+}
+.workout-page>h1{
+  text-align: center;
+}
+
+.goal-buttons {
+  margin-top: 500px;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.goal-buttons button {
+  margin: 0 10px;
+  padding: 0.7rem 1.4rem;
+  background-color: var(--accent);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.goal-buttons button:hover {
+  background-color: aqua;
+}
+
+.workout-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.workout-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.workout-card iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.workout-card h3 {
+  margin-bottom: 0.5rem;
+}
+

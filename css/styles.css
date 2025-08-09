@@ -43,7 +43,7 @@ body {
 .hero-section {
   text-align: center;
   padding: 4rem 2rem;
-  background-image: url("https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_1921,c_limit/412ef7b2-57f6-4885-979c-8004c6d95715/nike-training-club-app-home-workouts.jpg");
+  background-image: url("../assests/images/index1Image.avif");
   background-size: cover;         /* Ensures the image covers the whole section */
   background-position: center;    /* Centers the image */
   background-repeat: no-repeat;   /* Prevents repeating */
@@ -243,7 +243,7 @@ body {
 .workout-page {
   width: 100%;
   height: 100vh; /* Full viewport height */
-  background-image: url("https://i0.wp.com/fitonapp.com/wp-content/uploads/shutterstock_1039520737-scaled.jpg?resize=768%2C509&ssl=1");
+  background-image: url("../assests/images/Workoutback.webp");
   background-size: cover;        /* Ensures the image covers the whole div */
   background-position: center;   /* Centers the image */
   background-repeat: no-repeat;  /* Prevents image from repeating */

@@ -93,3 +93,11 @@ Firebase Authentication – Handles user registration and login securely.
 YouTube Embedded Links – Workout videos integrated directly into the site.
 Local Images & Assets – Meal and workout images stored in the assets/images folder for faster loading.
 
+🧑‍💻 About Me
+
+Hi! I’m Abhinav Dixit, a passionate Full Stack Developer who enjoys building meaningful and user-centric applications.
+I’m focused on creating impactful web solutions that enhance learning and collaboration in the tech community.
+
+📫 Connect with me:
+Linkedin : https://www.linkedin.com/in/abhinavdixit771/
+github : https://github.com/Abhinav07072001

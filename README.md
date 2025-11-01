@@ -1,30 +1,28 @@
 FitNest 🏋️‍♂️
 
+A frontend web application that helps users stay on track with their fitness goals by providing workout plans, meal suggestions, and progress tracking.
 
+🌟 Features
 
-Frontend Web App
-HTML · CSS · JavaScript · Firebase · Responsive Web App
+User Authentication – Secure sign-up and login using Firebase Authentication
 
-Live Demo 🚀
-https://friendly-gelato-f521e8.netlify.app
+Workout Plans – Categorized exercise routines with embedded YouTube tutorial videos
 
-FitNest is a simple yet engaging fitness web app designed to help users stay on track with their health goals. It brings together workout videos, meal suggestions, and progress tracking in one clean interface. Explore goal-based workout plans, get healthy meal ideas, and see your progress visually.
+Progress Tracking – Visual charts to monitor workouts and achievements
 
-This project emphasizes lightweight design, beginner-friendly accessibility, and a modern, responsive interface across devices.
+Meal Suggestions – Curated meal plans tailored to fitness goals with images and nutritional info
 
-✨ Features
+Responsive Design – Fully optimized for desktop, tablet, and mobile devices
 
-🏋️ User Authentication – Secure sign-up and login using Firebase Authentication
+Consistent Navigation – Shared navbar and footer across all pages
 
-💪 Workout Plans – Categorized exercise routines with embedded YouTube tutorial videos
+🌐 Live Demo
 
-📊 Progress Tracking – Visual charts to monitor workouts and achievements
+Frontend: https://friendly-gelato-f521e8.netlify.app
 
-🥗 Meal Suggestions – Curated meal plans tailored to fitness goals with images and nutritional info
+Video Walkthrough: [Project Demo Text: Open Loom video at https://www.loom.com/share/50d54cc6dadd4bd2819178aa8c4dc1e7]
 
-📱 Responsive Design – Fully optimized for desktop, tablet, and mobile devices
-
-🔗 Consistent Navigation – Shared navbar and footer across all pages for smooth navigation
+Codebase Walkthrough: [Code Walkthrough Text: Open Loom video at https://www.loom.com/share/2cf8bfd1a2ea4243b4d0b9e43c0fe2db]
 
 🛠️ Tech Stack
 Frontend
@@ -37,18 +35,53 @@ JavaScript – Core functionality, interactivity, and dynamic updates
 
 Authentication
 
-Firebase Authentication – Secure registration and login
-
+Firebase Authentication – Handles secure user registration and login  
 Multimedia
 
-YouTube Embedded Links – Workout videos integrated directly
+YouTube Embedded Links – Workout videos integrated into the site
 
-Local Images & Assets – Stored in assets/images for faster loading
+Local Images & Assets – Meal and workout images stored in assets/images
+
+📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+Web Browser (Chrome, Firefox, Edge, etc.)
+
+Code Editor (VS Code recommended)
+
+Internet connection for Firebase and YouTube integration
+
+🚀 Getting Started
+
+1. Clone the Repository
+   git clone https://github.com/Abhinav07072001/FitNest.git
+   cd FitNest
+2. Open Project Locally
+
+Open the index.html file in your browser.
+
+Ensure you have internet for Firebase Authentication and YouTube video embedding.
+
+3. Login / Register
+
+Use your own account by registering, or use the quick access credentials:
+Email: dixitabhinav788@gmail.com
+Password: 123456
+
+4. Navigate the App
+
+Workouts: View exercise routines with videos
+
+Meals: Get healthy meal suggestions with nutritional info
+
+Progress: Track and visualize your fitness journey
 
 📁 Project Structure
+
 Home-Fitness_Planner/
 ├── assets/
-│   └── images/            # Meal and workout images
+│   └── images/             # Meal and workout images
 ├── css/
 │   ├── login.css
 │   ├── meals.css
@@ -70,65 +103,28 @@ Home-Fitness_Planner/
 ├── workout.html
 └── ReadMe
 
-🚀 Getting Started
+🚢 Deployment
 
-Open the Website – Visit the Live Demo
- or run locally.
+The frontend is deployed on Netlify: https://friendly-gelato-f521e8.netlify.app
 
-Login / Register –
-Use your own account or the quick access credentials:
-
-Email: dixitabhinav788@gmail.com
-Password: 123456
-
-
-Navigate Between Pages – Use the navbar to explore:
-
-Workouts – View exercise routines with videos
-
-Meals – Get healthy meal suggestions
-
-Progress – Track and visualize your fitness journey
-
-Watch Workout Videos – Click on video links for detailed instructions
-
-Responsive Design – Works on desktop, tablet, and mobile
-
-🎥 Video Walkthrough
-
-Project Demo: Watch here
-
-Codebase Walkthrough: Watch here
-
-🌐 Deployment
-
-Push your repo to GitHub
-
-Connect with Netlify
-
-Add Firebase config as environment variables in Netlify
-
-Deploy and share your live app! 🚀
+Firebase services (Authentication) are live and connected
 
 🤝 Contributing
 
-Contributions are welcome! Fork the repo, make improvements, and open a pull request.
+Fork the repository
 
-📜 License
+Create a feature branch (git checkout -b feature/YourFeature)
 
-This project is licensed under the MIT License.
+Commit your changes (git commit -m 'Add some feature')
 
-🧑‍💻 Author
+Push to the branch (git push origin feature/YourFeature)
 
-Built with ❤️ by Abhinav Dixit
-Currently pursuing Full-Stack Development
+Open a Pull Request
 
-Connect with me:
+👥 Authors
 
-LinkedIn: https://www.linkedin.com/in/abhinavdixit771/
+GitHub: @Abhinav07072001
 
-GitHub: https://github.com/Abhinav07072001
+📧 Support
 
-💡 Hashtags
-
-#FitnessApp #HealthTech #MERNStack #ReactJS #NodeJS #WebApp #FitnessGoals #FullStackDevelopment #WorkoutTracker #JavaScript #UIUX #WebDevelopment #Innovation
+For support, email dixitabhinav788@gmail.com

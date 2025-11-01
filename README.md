@@ -77,24 +77,24 @@ Meals: Get healthy meal suggestions with nutritional info
 
 Progress: Track and visualize your fitness journey
 
-📁 Project Structure
+## 📁 Project Structure
 
 Home-Fitness_Planner/
 ├── assets/
-│   └── images/             # Meal and workout images
+│ └── images/ # Meal and workout images
 ├── css/
-│   ├── login.css
-│   ├── meals.css
-│   ├── progress.css
-│   ├── register.css
-│   └── styles.css
+│ ├── login.css
+│ ├── meals.css
+│ ├── progress.css
+│ ├── register.css
+│ └── styles.css
 ├── js/
-│   ├── firebase-config.js
-│   ├── login.js
-│   ├── meals.js
-│   ├── progress.js
-│   ├── register.js
-│   └── workout.js
+│ ├── firebase-config.js
+│ ├── login.js
+│ ├── meals.js
+│ ├── progress.js
+│ ├── register.js
+│ └── workout.js
 ├── index.html
 ├── login.html
 ├── meals.html
@@ -102,6 +102,7 @@ Home-Fitness_Planner/
 ├── register.html
 ├── workout.html
 └── ReadMe
+
 
 🚢 Deployment
 

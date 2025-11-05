@@ -53,10 +53,11 @@ Code Editor (VS Code recommended)
 Internet connection for Firebase and YouTube integration
 
 🚀 Getting Started
-
+```bash
 1. Clone the Repository
    git clone https://github.com/Abhinav07072001/FitNest.git
    cd FitNest
+```
 2. Open Project Locally
 
 Open the index.html file in your browser.
@@ -66,8 +67,10 @@ Ensure you have internet for Firebase Authentication and YouTube video embedding
 3. Login / Register
 
 Use your own account by registering, or use the quick access credentials:
+```bash
 Email: dixitabhinav788@gmail.com
 Password: 123456
+```
 
 4. Navigate the App
 
@@ -78,7 +81,7 @@ Meals: Get healthy meal suggestions with nutritional info
 Progress: Track and visualize your fitness journey
 
 ## 📁 Project Structure
-
+```bash
 Home-Fitness_Planner/
 ├── assets/
 │ └── images/ # Meal and workout images
@@ -102,7 +105,7 @@ Home-Fitness_Planner/
 ├── register.html
 ├── workout.html
 └── ReadMe
-
+```
 
 🚢 Deployment
 

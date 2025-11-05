@@ -53,11 +53,12 @@ Code Editor (VS Code recommended)
 Internet connection for Firebase and YouTube integration
 
 🚀 Getting Started
-```bash
+
 1. Clone the Repository
+   ```bash
    git clone https://github.com/Abhinav07072001/FitNest.git
    cd FitNest
-```
+   ```
 2. Open Project Locally
 
 Open the index.html file in your browser.
